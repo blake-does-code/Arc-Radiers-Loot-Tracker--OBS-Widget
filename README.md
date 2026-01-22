@@ -9,10 +9,12 @@ A lightweight, local-first session and loot tracker designed for **Arc Raiders**
 ---
 
 ## 📸 Preview
-> [!TIP]
-> Add a screenshot or GIF of your tracker here!
-> `![App Preview]([<img width="1724" height="1920" alt="Screenshot 2026-01-22 062654" src="https://github.com/user-attachments/assets/3f56b538-6437-477d-b282-9b3819eb4270" />
-])`
+
+<p align="center">
+  <img src="Screenshot 2026-01-22 062654.png" alt="Arc Raiders Pro Tracker OBS Setup" width="900">
+  <br>
+  <i>Real-time tracking interface alongside the OBS Studio integration.</i>
+</p>
 
 ---
 
