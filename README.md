@@ -1,48 +1,48 @@
-💰 Arc Raiders Pro Tracker
-A lightweight, local-first loot tracker designed for Arc Raiders (or any extraction shooter) to track your daily gains, raid performance, and wallet progress in real-time on stream.
+# 💰 Arc Raiders Pro Tracker
 
-✨ Features
-Real-Time OBS Integration: Automatically generates a loot_stats.txt file for a clean, text-based overlay.
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-windows%20%7C%20macos-lightgrey)
 
-Session Gains: Tracks exactly how much you've made since the start of your stream.
+A lightweight, local-first session and loot tracker designed for **Arc Raiders**. This tool allows streamers to track their wallet growth, raid counts, and profit-per-extraction in real-time with a clean text-based overlay for OBS.
 
-Raid Counter: Automatically increments your raid count every time you log a change in wallet value.
+---
 
-Personal Best: Keeps track of your "Best Raid" (highest single-extraction profit) during the session.
+## 📸 Preview
+> [!TIP]
+> Add a screenshot or GIF of your tracker here!
+> `![App Preview]([<img width="1724" height="1920" alt="Screenshot 2026-01-22 062654" src="https://github.com/user-attachments/assets/f309fc85-4ef5-4d8c-8f20-301c89fc8c21" />
+LINK_TO_SCREENSHOT])`
 
-Zero Resource Impact: Uses tkinter for an ultra-lightweight footprint while you play.
+---
 
-🚀 How to Use
-1. Requirements
-Python 3.x installed on your system.
+## ✨ Key Features
 
-2. Setup
-Download loot_tracker.py into its own folder.
+* **Session Gains Tracking:** Automatically calculates total profit/loss since you started your stream.
+* **Dynamic Raid Counter:** Increments your raid count automatically whenever your wallet value changes.
+* **Personal Best (PB):** Tracks your highest single-extraction profit during the current session.
+* **OBS Integration:** Generates a clean `loot_stats.txt` file that OBS can read natively as a Text Source.
+* **Privacy Focused:** No external API calls or account linking required. All data stays on your machine.
 
-Run the script:
+---
 
-Bash
-python loot_tracker.py
-Set Start Value: Enter your current wallet balance when you start your stream.
+## 🚀 Getting Started
 
-Log Raids: Every time you extract, enter your new wallet total and click LOG END OF RAID.
+### 1. Prerequisites
+* **Python 3.x** must be installed on your system.
+* No external libraries are required (uses built-in `tkinter`).
 
-3. Adding to OBS
-In OBS, add a new Text (GDI+) Source.
+### 2. Installation
+1.  Clone this repository or download the `loot_tracker.py` file.
+    ```bash
+    git clone [https://github.com/](https://github.com/)[YOUR_GITHUB_USERNAME]/arc-raiders-pro-tracker.git
+    ```
+2.  Navigate to the directory:
+    ```bash
+    cd arc-raiders-pro-tracker
+    ```
 
-Check the box that says Read from file.
-
-Click Browse and select the loot_stats.txt file created in the script's folder.
-
-Style your font and colors to match your stream layout!
-
-📂 Project Structure
-loot_tracker.py: The main GUI application.
-
-loot_stats.txt: The output file used by OBS (auto-generated).
-
-🛠️ Configuration
-You can edit the self.start_val in the code if you want to hardcode a specific starting wallet amount, or change FILE_PATH to save the output elsewhere.
-
-🤝 Contributing
-Feel free to fork this project! If you're a Python dev and want to help add a "Goal Progress Bar" or a database for long-term stats, pull requests are welcome.
+### 3. Usage
+1.  Run the application:
+    ```bash
+    python loot_tracker.
